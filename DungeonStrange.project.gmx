@@ -5,9 +5,34 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprites name="Environment">
+      <sprites name="Floor">
+        <sprite>sprites\spr_floor_basic</sprite>
+      </sprites>
+      <sprites name="Wall">
+        <sprite>sprites\spr_wall_basic</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Player">
+      <sprite>sprites\spr_player_temp</sprite>
+    </sprites>
+    <sprites name="NPC"/>
+    <sprites name="ViewBorder">
+      <sprite>sprites\spr_viewcorner_basic</sprite>
+      <sprite>sprites\spr_viewside_basic</sprite>
+    </sprites>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\bkg_test</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\Console</object>
+    <objects name="Environment"/>
+    <objects name="NPC"/>
+    <objects name="Menu"/>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
