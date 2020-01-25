@@ -1,2 +1,2 @@
 # DungeonStrange
-A rogue-like project made in GameMaker Studio.
+A rogue-like project made in Unity C#.

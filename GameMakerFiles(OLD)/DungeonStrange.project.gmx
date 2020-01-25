@@ -17,7 +17,6 @@
     <sprites name="Player">
       <sprite>sprites\spr_player_temp</sprite>
     </sprites>
-    <sprites name="NPC"/>
     <sprites name="ViewBorder">
       <sprite>sprites\spr_viewcorner_basic</sprite>
       <sprite>sprites\spr_viewside_basic</sprite>
@@ -27,12 +26,35 @@
     <background>background\bkg_test</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_collision.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\Console</object>
-    <objects name="Environment"/>
-    <objects name="NPC"/>
-    <objects name="Menu"/>
+    <objects name="Parent">
+      <object>objects\par_collide</object>
+    </objects>
+    <objects name="Environment">
+      <objects name="Floor">
+        <object>objects\obj_floor_basic</object>
+      </objects>
+      <objects name="Wall">
+        <object>objects\obj_wall_basic</object>
+      </objects>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_player</object>
+    </objects>
+    <objects name="ViewBorder">
+      <object>objects\obj_viewborder</object>
+    </objects>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_initialise</room>
+    <rooms name="TEST">
+      <room>rooms\rm_test_0_1</room>
+    </rooms>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
